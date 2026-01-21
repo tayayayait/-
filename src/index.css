@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  위치 기반 통합 할인 정보 플랫폼 - 디자인 시스템
+  All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* 기본 배경/전경 */
+    --background: 0 0% 98%;
+    --foreground: 220 13% 13%;
+
+    /* 카드 */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+
+    /* 팝오버 */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+
+    /* Primary - Blue #2563EB */
+    --primary: 217 91% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 13% 13%;
+
+    /* Muted */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Orange #F97316 */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive - Red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - Green */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Yellow */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Info - Sky Blue */
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* 테두리/입력 */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 53%;
+
+    --radius: 0.75rem;
+
+    /* ===== 카테고리별 색상 ===== */
+    /* 마트/슈퍼 - Blue */
+    --category-mart: 217 91% 53%;
+    /* 카페 - Brown */
+    --category-cafe: 25 38% 42%;
+    /* 음식점 - Orange */
+    --category-restaurant: 25 95% 53%;
+    /* 병원/약국 - Sky Blue */
+    --category-medical: 199 89% 48%;
+    /* 뷰티/헤어 - Pink */
+    --category-beauty: 330 81% 60%;
+    /* 편의점 - Green */
+    --category-convenience: 142 71% 45%;
+    /* 문화/레저 - Purple */
+    --category-culture: 262 83% 58%;
+    /* 기타 - Gray */
+    --category-other: 215 16% 47%;
+
+    /* 사이드바 (관리자) */
+    --sidebar-background: 220 13% 13%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 217 91% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 13% 20%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 220 13% 20%;
+    --sidebar-ring: 217 91% 53%;
+
+    /* 하단 탭바 */
+    --tab-bar: 0 0% 100%;
+    --tab-bar-foreground: 215 16% 47%;
+    --tab-bar-active: 217 91% 53%;
+
+    /* 그림자 */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+  }
+
+  .dark {
+    --background: 220 13% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 13% 13%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 13% 13%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 13% 10%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 71% 35%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 40%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 89% 40%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+
+    /* 카테고리별 색상 (다크모드) */
+    --category-mart: 217 91% 60%;
+    --category-cafe: 25 38% 52%;
+    --category-restaurant: 25 95% 60%;
+    --category-medical: 199 89% 55%;
+    --category-beauty: 330 81% 65%;
+    --category-convenience: 142 71% 50%;
+    --category-culture: 262 83% 65%;
+    --category-other: 215 20% 55%;
+
+    --sidebar-background: 220 13% 8%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 220 13% 10%;
+    --sidebar-accent: 220 13% 15%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 220 13% 15%;
+    --sidebar-ring: 217 91% 60%;
+
+    --tab-bar: 220 13% 13%;
+    --tab-bar-foreground: 215 20% 55%;
+    --tab-bar-active: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  }
+
+  /* 타이포그래피 스케일 */
+  .text-h1 {
+    @apply text-2xl font-bold tracking-tight;
+  }
+
+  .text-h2 {
+    @apply text-xl font-semibold tracking-tight;
+  }
+
+  .text-h3 {
+    @apply text-lg font-semibold;
+  }
+
+  .text-body {
+    @apply text-base;
+  }
+
+  .text-body-sm {
+    @apply text-sm;
+  }
+
+  .text-caption {
+    @apply text-xs text-muted-foreground;
+  }
+}
+
+/* 스크롤바 스타일 */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 안전 영역 (모바일) */
+  .safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-inset-top {
+    padding-top: env(safe-area-inset-top);
+  }
+}

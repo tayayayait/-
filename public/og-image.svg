@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="presentation">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#0ea5e9" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f97316" />
+      <stop offset="1" stop-color="#facc15" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="48" />
+  <g transform="translate(120 110)">
+    <circle cx="520" cy="210" r="110" fill="rgba(255,255,255,0.08)" />
+    <circle cx="520" cy="210" r="80" fill="rgba(249,115,22,0.35)" />
+    <rect x="410" y="150" width="220" height="180" rx="32" fill="url(#accent)" opacity="0.96" />
+    <rect x="460" y="210" width="120" height="120" rx="24" fill="#fff" opacity="0.8" />
+    <path d="M496 242h48M496 278h48" stroke="#0f172a" stroke-width="12" stroke-linecap="round" />
+    <path d="M520 198v-80" stroke="#0f172a" stroke-width="18" stroke-linecap="round" />
+    <path d="M456 182h128" stroke="#0f172a" stroke-width="18" stroke-linecap="round" />
+  </g>
+  <text x="80" y="500" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700" fill="#fff">
+    Project Builder Kit
+  </text>
+  <text x="80" y="580" font-family="Inter, Arial, sans-serif" font-size="32" fill="#cbd5f5" letter-spacing="0.08em">
+    Launch, track, and share every promotion
+  </text>
+</svg>
